@@ -1,0 +1,30 @@
+<ion-view>     
+        <ion-nav-view ></ion-nav-view>
+        <ion-content class = "padding has-header" >
+        
+        
+        <div class="card" align="center">
+            <div class="item">
+                <p><b>Name:</b></p>
+                <input type="text" id="name" ng-model="contact.name" required> 
+            </div>
+        </div>
+        <div class="card" >
+            <div class="item" align="center">
+                <p><b>Phone number:</b></p>
+                <input id="nr" type="text" ng-model="contact.number" required> 
+            </div>
+            </div>        
+       
+            <div class = "buttons" align="center">
+            <button class = "button icon ion-plus-circled button-balanced button-clear button-large" ng-click = "accept()" ></button>
+            <button class = "button icon ion-close-circled button-assertive button-clear button-large" ng-click = "accept()" ></button>
+            </div>
+        </ion-content>
+    <ion-footer-bar align-title="center" class = "bar-calm">   
+        </ion-footer-bar>
+    
+</ion-view>
+    
+       
+

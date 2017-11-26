@@ -1,0 +1,18 @@
+<ion-view  view-title="Contacts " align = "center">
+        <ion-content class = "padding has-header ">
+        <div class = "list list-inset positive " ng-repeat = "item in json">
+            <div id= "item" class = "item " ng-click = "onItem(item)">  
+                <i class = " icon icon ion-ios-minus assertive" ng-model = "onDelete" ng-hide = "!onDelete"  ng-click="itemClick(item.Id)"></i>
+                <i class = " icon ion-edit royal" ng-model = "onEdit" ng-hide = "!onEdit"  ></i>
+                <a>
+                <p><b>Name: </b><span> {{item.Name}}</span></p>               
+                <p><b>Number: </b><span> {{item.Number}}</span></p>
+                </a>  
+            </div>            
+        </div> 
+        </ion-content>
+        <ion-footer-bar class = "bar-calm">    
+        </ion-footer-bar>
+</ion-view>
+    
+    

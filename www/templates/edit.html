@@ -1,0 +1,24 @@
+<ion-view>     
+        <ion-nav-view ></ion-nav-view>
+        <ion-content class = "padding has-header" >
+        <div class="card">
+            <div class="item" >
+                <label>Name:</label>
+                <input type="text" value ="{{item.Name}}" id = "editName" required> 
+            </div>
+        </div>
+        <div class="card">
+            <div class="item" >
+                <label >Phone number:</label>
+                <input  type="text" value = " {{ item.Number }} " id = "editNumber" required > 
+            </div>
+            </div>        
+       
+            <div class = "buttons" >
+            <button class = "button icon ion-checkmark-round button-balanced button-clear" ng-click = "sendEdit(item)" ></button>
+            </div>
+        </ion-content>
+    <ion-footer-bar align-title="center" class = "bar-calm">   
+        </ion-footer-bar>
+    
+</ion-view>
